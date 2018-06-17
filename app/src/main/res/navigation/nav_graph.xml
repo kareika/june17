@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/cpature_photo">
+
+    <fragment
+        android:id="@+id/cpature_photo"
+        android:name="com.example.karei.june17.Cpature_photo"
+        android:label="Cpature_photo" >
+        <action
+            android:id="@+id/action_cpature_photo_to_disire_Photo"
+            app:destination="@id/disire_Photo" />
+    </fragment>
+    <fragment
+        android:id="@+id/disire_Photo"
+        android:name="com.example.karei.june17.Disire_Photo"
+        android:label="Disire_Photo" >
+        <action
+            android:id="@+id/action_disire_Photo_to_decide_Photo"
+            app:destination="@id/decide_Photo" />
+    </fragment>
+    <fragment
+        android:id="@+id/decide_Photo"
+        android:name="com.example.karei.june17.Decide_Photo"
+        android:label="Decide_Photo" />
+</navigation>
